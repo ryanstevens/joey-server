@@ -41,7 +41,9 @@ jobs:
       - image: circleci/node:8.9.0
     working_directory:  /tmp/my-project
     steps:
-      - run: bash ls -lath
+      - run:
+          name: beep
+          command: bash ls -lath
       - run:
           name: Run setup script
           command: bash .circleci/setup-heroku.sh
