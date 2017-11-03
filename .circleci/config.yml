@@ -36,4 +36,9 @@ jobs:
       # run tests!
       - run: yarn run test
 
+  deployment:
+    staging:
+      branch: master
+      heroku:
+        appname: joey-financial
 

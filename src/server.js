@@ -3,7 +3,7 @@ const log = require('log');
 const conf = require('conf');
 
 const app = express();
-const port = conf.get('port');
+const port = process.env.PORT || conf.get('port');
 
 app.get('/', function (req, res) {
   res.send('Hello World!')
