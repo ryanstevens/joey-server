@@ -53,8 +53,8 @@ jobs:
             git push --force git@heroku.com:$joey-financial.git HEAD:refs/heads/master
             heroku run python manage.py deploy
             heroku restart
-               
- workflows:
+
+workflows:
    version: 2
    build-deploy:
      jobs:
