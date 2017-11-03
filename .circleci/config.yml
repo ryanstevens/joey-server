@@ -45,6 +45,6 @@ jobs:
       - run:
           name: Deploy Master to Heroku
           command: |
-            git push --force git@heroku.com:$joey-financial.git HEAD:refs/heads/master
+            git push --force git@heroku.com:joey-financial.git HEAD:refs/heads/master
             heroku run python manage.py deploy
             heroku restart
