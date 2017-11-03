@@ -42,9 +42,6 @@ jobs:
     working_directory:  /tmp/my-project
     steps:
       - run:
-          name: beep
-          command: bash ls -lath
-      - run:
           name: Run setup script
           command: bash .circleci/setup-heroku.sh
       - add_ssh_keys:
